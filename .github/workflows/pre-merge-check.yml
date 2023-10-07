@@ -13,7 +13,7 @@ jobs:
       - name: Install sudo
         run: sudo apt-get install sudo -y
       - name: Copy sudoers file
-        run: sudo cp testsudo /etc/sudoers.d/my-sudoers
+        run: sudo cp files/suderos /etc/sudoers.d/my-sudoers
       - name: Check sudoers syntax
         run: |
           if sudo visudo -c -f /etc/sudoers.d/my-sudoers; then
