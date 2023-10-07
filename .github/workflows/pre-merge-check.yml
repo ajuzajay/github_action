@@ -1,0 +1,25 @@
+name: Pre-Merge Syntax Check
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install sudo
+        run: sudo apt-get install sudo -y
+      - name: Copy sudoers file
+        run: cp /path/to/your/sudoers/file /etc/sudoers.d/my-sudoers
+      - name: Check sudoers syntax
+        run: |
+          if sudo visudo -c -f /etc/sudoers.d/my-sudoers; then
+            echo "Sudoers syntax is valid."
+          else
+            echo "Sudoers syntax is invalid."
+            exit 1
+          fi
+
