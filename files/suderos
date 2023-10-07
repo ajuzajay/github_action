@@ -1,7 +1,7 @@
 Host_Alias  NODEWCS_SERVERS = usnnats1lutl001
 User_Alias  NODEWCS_USER = nodewcsadm
 User_Alias  NODEWCSADMIN_USER = sku236,spuna2,nmarp2
-Cmnd_Alias  NODEWCS_USER_CMDS = /usr/bin/docker *, \
+Cmnd_Alias  NODEWCS_USER_CMDS = /usr/bin/docker *, 
                             /usr/bin/docker run *, \
                             /usr/bin/docker exec -it * bash, \
                             /usr/bin/systemctl st* docker.service, \
