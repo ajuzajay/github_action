@@ -1,2 +1,0 @@
-Ajay ALL=(ALL) NOPASSWD: /usr/bin/systemctl status jenkins,\
-                         /usr/bin/systemctl start jenkins
