@@ -22,4 +22,3 @@ jobs:
             echo "Sudoers syntax is invalid."
             exit 1
           fi
-
