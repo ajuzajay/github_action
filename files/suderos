@@ -1,7 +1,7 @@
-Host_Alias  NODEWCS_SERVERS = usnnats1lutl001
-User_Alias  NODEWCS_USER = nodewcsadm
-User_Alias  NODEWCSADMIN_USER = sku236,spuna2,nmarp2
-Cmnd_Alias  NODEWCS_USER_CMDS = /usr/bin/docker *, \
+Host_Alias  NODEBCS_SERVERS = bsnnats1lutl001
+User_Alias  NODEBCS_USER = nodewcsadm
+User_Alias  NODEBCSADMIN_USER = ajay,arun,lilly
+Cmnd_Alias  NODEBCS_USER_CMDS = /usr/bin/docker *, \
                             /usr/bin/docker run *, \
                             /usr/bin/docker exec -it * bash, \
                             /usr/bin/systemctl st* docker.service, \
@@ -9,5 +9,5 @@ Cmnd_Alias  NODEWCS_USER_CMDS = /usr/bin/docker *, \
                             /usr/bin/systemctl enable docker.service, \
                             /usr/bin/systemctl disable docker.service
                             
-NODEWCSADMIN_USER NODEWCS_SERVERS = NOPASSWD:ALL
-NODEWCS_USER NODEWCS_SERVERS = NOPASSWD:NODEWCS_USER_CMDS
+NODEWCSADMIN_USER NODEBCS_SERVERS = NOPASSWD:ALL
+NODEBCS_USER NODEBCS_SERVERS = NOPASSWD:NODEBCS_USER_CMDS
