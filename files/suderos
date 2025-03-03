@@ -7,7 +7,7 @@ Cmnd_Alias  NODEBCS_USER_CMDS = /usr/bin/docker *, \
                             /usr/bin/systemctl st* docker.service, \
                             /usr/bin/systemctl restart docker.service, \
                             /usr/bin/systemctl enable docker.service, \
-                            /usr/bin/systemctl disable docker.service
+                            /usr/bin/systemctl disable docker.service, \
                             
 NODEWCSADMIN_USER NODEBCS_SERVERS = NOPASSWD:ALL
 NODEBCS_USER NODEBCS_SERVERS = NOPASSWD:NODEBCS_USER_CMDS
